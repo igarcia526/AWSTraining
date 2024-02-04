@@ -13,7 +13,7 @@ export class AwsTrainingStack extends Stack {
     });
 
     const topic = new sns.Topic(this, 'AwsTrainingTopic');
-
+    //ok
     topic.addSubscription(new subs.SqsSubscription(queue));
   }
 }
